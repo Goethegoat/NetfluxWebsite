@@ -1,0 +1,532 @@
+        /*Style globale*/
+        /*Le code couleur primaire*/
+        
+         :root {
+            --primary-color: #e50914;
+            --dark-color: #141414;
+            --light-color: #f4f4f4;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0.5% 0.5% 0.5% 0.5%;
+        }
+        
+        ul,
+        li,
+        div,
+        p,
+        body {
+            margin: 0;
+            padding: 0px;
+            cursor: pointer;
+        }
+        
+        div {
+            margin-left: 2%;
+        }
+        
+        body {
+            font-family: Roboto, Helvetica, sans-serif;
+            background-color: #464646;
+            overflow-x: hidden;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #fff;
+        }
+        
+        h1 a {
+            text-decoration: none;
+        }
+        
+        button {
+            border-radius: 10px;
+            margin: 5px;
+        }
+        
+        img {
+            width: 50%;
+        }
+        /*Fenetre Pop. Fixez le bouton sur le côté gauche de la page the button on the left side of the page */
+        
+        .open-btn {
+            position: absolute;
+            top: 3%;
+            left: 2%;
+            text-align: center;
+            width: 200px;
+        }
+        /* Design et fixation du bouton "Connectez-vous" sur la page */
+        
+        .open-button {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.8;
+            width: 120%;
+            height: 120%;
+            font-size: larger;
+        }
+        /* Positionnez la forme Popup */
+        
+        .login-popup {
+            text-align: center;
+            width: 200%;
+            margin: 5px;
+            background-color: grey;
+        }
+        /* Masque la forme Popup */
+        
+        .form-popup {
+            display: none;
+            position: fixed;
+            width: 50%;
+            margin: 15% 25% 0 25%;
+            border: 2px solid #666;
+            z-index: 9;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 11%;
+            color: white;
+        }
+        
+        .connect {
+            position: absolute;
+            top: 1%;
+        }
+        /*Mise en forme des boutons Inscription*/
+        
+        .btn {
+            background-color: transparent;
+            border: none;
+            border: solid #000000;
+            border-radius: 5ch;
+            position: absolute;
+            bottom: 10%;
+            right: 40%;
+            color: white;
+        }
+        /*Mise en forme du boutons de fermeture de la fenêtre pop*/
+        
+        .btnClose {
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            border: solid black;
+            border-radius: 50%;
+        }
+        
+        .btn_connect {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+        }
+        /*Position de l'image Titre NETFLUX*/
+        
+        .logo_accueil {
+            position: relative;
+            margin: 8% 25% 0 25%;
+        }
+        /*Barre de recherche*/
+        
+        .search {
+            position: absolute;
+            top: 15%;
+            right: 10%;
+            caret-color: red;
+            background-color: black;
+            color: darkred;
+        }
+        /* Enlève le point avant chaque li*/
+        
+        li {
+            display: inline-block;
+        }
+        /*Design et position du div head de la page d'accueil*/
+        
+        .head {
+            background-color: black;
+            border-radius: 0 0 40% 40%;
+            margin: -5% 0 0 0;
+        }
+        /* Création du menu*/
+        
+        .menu {
+            padding: 10px;
+            list-style: none;
+            text-align: center;
+        }
+        /* Design des a href */
+        
+        .menu a {
+            text-decoration: none;
+            display: block;
+            padding: 8px 30px;
+            color: #fff;
+            font-family: arial;
+            font-size: x-large;
+        }
+        /*Personnalisation des affichages par Films et series*/
+        
+        .newMovie {
+            position: relative;
+            /* Mettre une carte dans la rangée suivante lorsque les cartes précédentes prennent toute la largeur */
+            display: flex;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            margin: 5% 0 5% 5%;
+            padding: 5px;
+        }
+        
+        .Topstreaming,
+        .Topseries {
+            position: relative;
+            display: flex;
+            z-index: 1;
+            border-radius: 10px;
+            margin-top: 3%;
+        }
+        /*Design des titres des sous-parties liées au menu d'accueil*/
+        
+        #NC,
+        #F,
+        #S {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        /*Taille et espacement entre les affiches de films et de series*/
+        
+        .newMovie a img {
+            border: none;
+            height: 110%;
+            width: 110%;
+            border-radius: 10%;
+        }
+        
+        .Topstreaming a img {
+            border: none;
+            height: 90%;
+            width: 80%;
+            border-radius: 10%;
+        }
+        
+        .Topseries a img {
+            border: none;
+            height: 90%;
+            width: 80%;
+            border-radius: 10%;
+        }
+        
+        .newMovie_column {
+            /* Espace entre les colonnes */
+            margin: -3% 5% 0 1%;
+            /* Emplacement entre les colonnes */
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        
+        .Topstreaming_column,
+        .Topseries_column {
+            /* Espace entre les colonnes */
+            margin: 0 -5% 5% 0;
+            /* Emplacement entre les colonnes */
+            display: flex;
+            flex-direction: column;
+            width: 16.8%;
+        }
+        
+        .newMovie_column :hover,
+        .Topstreaming_column :hover {
+            transform: scale(1.15);
+        }
+        /* Design et position pages présentation films, texte et affiche*/
+        
+        a {
+            color: red;
+        }
+        
+        .img {
+            width: 75%;
+            border-radius: 10%;
+            margin-top: 2%;
+            position: relative;
+            padding: 0%;
+        }
+        
+        .synopsis {
+            position: relative;
+            margin: -55% 10% 0 50%;
+            color: white;
+            font-size: x-large;
+        }
+        
+        p {
+            position: relative;
+            font-style: oblique;
+        }
+        
+        .Cine video {
+            position: relative;
+            width: 50%;
+            margin: 3% 0 0 45%;
+        }
+        /*Pages des filmes les plus vues*/
+        
+        .movie_title {
+            position: relative;
+            width: 25%;
+            margin: 2% 37.5% 0 37.5%;
+            padding: 1%;
+        }
+        
+        table {
+            position: relative;
+            margin-left: 10%;
+        }
+        
+        .titre {
+            position: relative;
+            font-size: 500%;
+            margin: 2% 0 0 10%;
+        }
+        
+        .Sys {
+            margin: 0 40% 0 40%;
+            font-size: xx-large;
+            text-decoration: solid underline;
+        }
+        
+        .resume {
+            font-size: large;
+        }
+        
+        .reservation {
+            position: relative;
+            margin: 2% 0 2% 60%;
+            font-size: xx-large;
+        }
+        /*Mise en place des films*/
+        
+        .film video {
+            position: relative;
+            width: 50%;
+            margin: 3% 25% 0 25%;
+        }
+        /*Design épisodes series*/
+        
+        .Plusvue img {
+            position: relative;
+            margin: 0 2% 2% -10%;
+        }
+        
+        .saison {
+            color: white;
+            position: relative;
+            margin: -60% 0 0 50%;
+        }
+        
+        .episode {
+            display: none;
+            position: fixed;
+            margin: -30% 0 0 -5%;
+            width: 50%;
+        }
+        
+        .episode video {
+            width: 70%;
+            position: relative;
+            margin: 5%;
+        }
+        
+        .CloseEp {
+            position: absolute;
+            margin-top: -2%;
+            background-color: black;
+            color: white;
+        }
+        /*Insription*/
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .Inscription ul li input {
+            caret-color: red;
+            background-color: black;
+            color: darkred;
+            margin-left: 10px;
+        }
+        
+        .Inscription ul li {
+            display: flex;
+            /* Mettre une carte dans la rangée suivante lorsque les cartes précédentes prennent toute la largeur */
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .Inscription {
+            margin: 10% auto;
+            align-items: center;
+            width: 75%;
+            background-color: rgb(88, 88, 88);
+            border: solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        .genre_item {
+            display: flex;
+            /* Mettre une carte dans la rangée suivante lorsque les cartes précédentes prennent toute la largeur */
+            flex-wrap: wrap;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .genre {
+            flex-basis: auto;
+            padding-left: 8px;
+            padding-right: 8px;
+            border: solid #fff;
+            border-radius: 10px;
+            color: #fff;
+            margin: 0 5px 15px 5px;
+            padding: 5px;
+        }
+        
+        .univers_item {
+            display: flex;
+            /* Mettre une carte dans la rangée suivante lorsque les cartes précédentes prennent toute la largeur */
+            flex-wrap: wrap;
+            margin-left: -8px;
+            margin-right: -8px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            padding: 5px;
+        }
+        
+        .univers {
+            flex-basis: auto;
+            padding-left: 8px;
+            padding-right: 8px;
+            border: solid #fff;
+            border-radius: 10px;
+            color: #fff;
+            margin: 0 5px 15px 5px;
+            cursor: pointer;
+        }
+        
+        .genre :hover,
+        .univers :hover {
+            background-color: black;
+        }
+        /* Informations légales */
+        /*toutes les pages infos*/
+        
+        .infos {
+            font-family: helvetica;
+            line-height: 2em;
+            Background-color: rgb(236, 236, 236);
+        }
+        /*format des différents titres*/
+        
+        .info_title {
+            font-family: helvetica;
+            font-size: 2em;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .info_title2 {
+            font-family: helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: black;
+        }
+        /*format du bandeau*/
+        
+        .header_infos {
+            height: 100%;
+            background-color: black;
+            color: white;
+            font-family: helvetica;
+            border-radius: 10px;
+        }
+        /*logo dans le header des pages infos*/
+        
+        .logo {
+            width: 20%;
+            height: 30%;
+            margin: 0 80% 0 2%;
+        }
+        
+        .text_header {
+            margin: 0 10px 5px 550px;
+        }
+        /*format du bas de page*/
+        
+        .footer_infos {
+            position: absolute;
+            color: white;
+            background-color: black;
+            text-align: right;
+            width: 100%;
+            margin: 5% 0 -10% 0;
+            padding: 5%;
+        }
+        
+        .footer_series {
+            position: absolute;
+            color: white;
+            background-color: black;
+            text-align: right;
+            width: 100%;
+            margin: 30% 0 -10% 0;
+            padding: 5%;
+        }
+        /*Titre des footers*/
+        
+        .footer_title {
+            position: relative;
+            margin: 5% 25% 5% 25%;
+        }
+        /*caractéristiques des liens dans le footer*/
+        
+        .footer_infos a {
+            position: relative;
+            text-decoration: none;
+            font-size: large;
+        }
+        
+        .footer_info h3 {
+            text-align: left;
+            position: absolute;
+            margin-top: 1.5%;
+        }
+        /*texte avec lien vers autres pages*/
+        
+        footer p {
+            margin-right: 5%;
+        }
+        /*taille de la boîte de dialogue*/
+        
+        #dialog {
+            height: 100px;
+            width: 80%;
+        }

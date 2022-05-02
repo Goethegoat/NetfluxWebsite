@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Netflux_fr</title>
+    <link rel="icon" type="image/png" href="Netflix-new-icon.png" />
+    <link rel="stylesheet" href="Projet.css">
+    <script src="Projet.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <!--Bouton de connexion qui lance la fenêtre pop et la fonction JS openForm()-->
+        <div class="open-btn">
+            <h3><button class="open-button" onclick="openForm()">Connectez-vous</button></h3>
+        </div>
+        <!--Fenêtre Pop-->
+        <div class="login-popup">
+            <div class="form-popup" id="popupForm">
+                <h2 class="connect">Veuillez vous connecter</h2><button id="btnClose" class="btnClose" onclick="closeForm()">X</button><br> Adresse email : <input type="text" placeholder="Email"> <br><br> Mot de passe : <input type="password" placeholder="*******"><br><br>
+                <button type="submit" class="btn_connect" id="btn_connect" onclick="valideForm()">Valider</button><br><br>
+                <button type="submit" class="btn" id="btnInsc" onclick="window.location.href = 'Inscription_fr.html';">Inscription</button>
+            </div>
+        </div>
+        <!--Titre et lien-->
+        <div class="titre">
+            <h1>
+                <a href="Netflux_fr.html"><img src="NETFLUX.png" alt="le logo ne peut pas se charger" class="logo_accueil" /></a>
+            </h1>
+            <!--Barre de recherche-->
+            <input type="search" placeholder="Recherche" class="search">
+        </div><br>
+        <!--Menu header-->
+        <ul class="menu">
+            <li><a href="#NC">Nouveautés au cinema</a></li>
+            <li><a href="#F">Films</a></li>
+            <li><a href="#S">Series</a></li>
+        </ul>
+        <br>
+        <br>
+    </header>
+    <main>
+        <br>
+        <!--Lien du menu vers l'endroit de la page recherché-->
+        <h2 id="NC">Les nouveautés au cinéma</h2>
+        <div class="newMovie">
+            <!--Mise en avant des films les plus populaires présent au cinéma-->
+            <div class="newMovie_column">
+                <a href="Justsu0.html"><img src="Affiches/Jujustsu_Kaisen.jpg" alt="film"></a>
+            </div>
+            <div class="newMovie_column">
+                <a href="Uncharted.html"><img src="Affiches/Uncharted.jpg" alt="film"></a>
+            </div>
+            <div class="newMovie_column">
+                <a href="Batman.html"><img src="Affiches/Batman.jpg" alt="film"></a>
+            </div>
+            <div class="newMovie_column">
+                <a href="Maigret.html"><img src="Affiches/Maigret.jpg" alt="film"></a>
+            </div>
+            <div class="newMovie_column">
+                <a href="Goliath.html"><img src="Affiches/goliath.jpg" alt="film"></a>
+            </div>
+            <div class="newMovie_column">
+                <a href="Belfast.html"><img src="Affiches/Belfast.jpg" alt="film"></a>
+            </div>
+
+        </div>
+        <br><br>
+        <h2 id="F">Les films les plus vus</h2>
+        <div class="Topstreaming">
+            <!--Mise en avant des films populaire en streaming-->
+            <div class="Topstreaming_column">
+                <a href="Avatar.html"><img src="Affiches/Avatar.jpeg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Avengers.html"><img src="Affiches/Avengers.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="SDA.html"><img src="Affiches/LordOfRings.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Skyfall.html"><img src="Affiches/Skyfall.jpeg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="SW.html"><img src="Affiches/StarsWars.jpeg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="42.html"><img src="Affiches/42.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Titanic.html"><img src="Affiches/Titanic.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Majordom.html"><img src="Affiches/Majordom.jpg" alt="film"></a>
+            </div>
+        </div>
+        <h2 id="S">Les séries populaires</h2>
+        <div class="Topseries">
+            <!--Mise en avant des series les plus populaires en streaming-->
+            <div class="Topstreaming_column">
+                <a href="BBad.html"><img src="Affiches/BreakingBad.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="GOT.html"><img src="Affiches/GOT.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Friends.html"><img src="Affiches/Friends.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="PrisonBreak.html"><img src="Affiches/PrisonBreak.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Soprano.html"><img src="Affiches/Soprano.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="BDL.html"><img src="Affiches/BureauDesLegendes.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="Vikings.html"><img src="Affiches/Vinkings.jpg" alt="film"></a>
+            </div>
+            <div class="Topstreaming_column">
+                <a href="PB.html"><img src="Affiches/PeakyBlinders.jpg" alt="film"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer_infos">
+        <h3>Antoine DAO & Yann GOETGHELUCK</h3>
+        <a href="Contact.html">Contact</a>
+        <a href="pages_info_legales.html">Page d'informations légales</a>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="Conditions_utilisation.html">Conditions d'utilisation</a>
+    </footer>
+</body>
+
+
+
+</html>

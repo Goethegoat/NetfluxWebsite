@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Netflux_Inscr</title>
+    <link rel="icon" type="image/png" href="Netflix-new-icon.png" />
+    <link rel="stylesheet" href="Projet.css">
+    <script src="Projet.js"></script>
+</head>
+
+<body>
+    <a href="Netflux_fr.html"><img src="NETFLUX.png" alt="le logo ne peut pas se charger" /></a>
+    <div class="Inscription">
+        <h2>Inscritpion</h2><br>
+        <ul>
+            <li>Sexe : Femme <input type="radio" id="femme" name="sexe"> Homme <input type="radio" id="homme" name="sexe"></li>
+            <li>Nom : <input type="text" id="nom" placeholder="Ludig" name="nom" /></li>
+            <li>Prénom : <input type="text" id="prenom" placeholder="David" name="prenom" /></li>
+            <li>Adresse mail : <input type="text" id="mail" placeholder="Jean.Dupont@mail.com" name="mail" /></li>
+            <li>Ville : <input type="text" id="ville" placeholder="Paris 8ème" name="adresse" /></li>
+            <li>Pseudo : <input type="text" id="pseudo" name="pseudo" /></li>
+            <li>Mot de passe : <input type="password" id="mdp" name="mdp" placeholder="**********" /> </li>
+            <li>Confirmation mot de passe : <input type="password" id="cmdp" name="cmdp" placeholder="*********" /> </li>
+            <li>Cinéma préféré : <select id="cine" name="cine">
+                <option value ="Pathé">Pathé</option>
+                <option value ="CGR">CGR</option> 
+                <option value="Gaumont">Gaumont</option>
+                <option value="Kinépolis">Kinépolis</option></select>
+            </li>
+        </ul>
+        <br>
+        <h2>Genre préféré</h2><br>
+        <div class="genre_item">
+            <div class="genre" id="style" onclick="select()">
+                Action
+            </div>
+            <div class="genre" id="style1" onclick="select1()">
+                Aventure
+            </div>
+            <div class="genre" id="style2" onclick="select2()">
+                Animation
+            </div>
+            <div class="genre" id="style3" onclick="select3()">
+                Comédie
+            </div>
+            <div class="genre" id="style4" onclick="select4()">
+                Crime
+            </div>
+            <div class="genre" id="style5" onclick="select5()">
+                Drame
+            </div>
+            <div class="genre" id="style6" onclick="select6()">
+                Familial
+            </div>
+            <div class="genre" id="style7" onclick="select7()">
+                Fantastique
+            </div>
+            <div class="genre" id="style8" onclick="select8()">
+                Historique
+            </div>
+            <div class="genre" id="style9" onclick="select9()">
+                Horreur
+            </div>
+            <div class="genre" id="style10" onclick="select10()">
+                Musique
+            </div>
+            <div class="genre" id="style11" onclick="select11()">
+                Mystère
+            </div>
+            <div class="genre" id="style12" onclick="select12()">
+                Romance
+            </div>
+            <div class="genre" id="style13" onclick="select13()">
+                Sci-fi
+            </div>
+            <div class="genre" id="style14" onclick="select14()">
+                Téléfilm
+            </div>
+            <div class="genre" id="style15" onclick="select15()">
+                Thriller
+            </div>
+            <div class="genre" id="style16" onclick="select16()">
+                Guerre
+            </div>
+            <div class="genre" id="style17" onclick="select17()">
+                Westerne
+            </div>
+        </div>
+        <h2>Univers connu</h2>
+        <div class="univers_item">
+            <!-- A card with given width -->
+            <div class="univers" id="styleA" onclick="selectA()">
+                Star Wars
+            </div>
+            <div class="univers" id="styleB" onclick="selectB()">
+                Seigneur des anneaux
+            </div>
+            <div class="univers" id="styleC" onclick="selectC()">
+                Marvel
+            </div>
+            <div class="univers" id="styleD" onclick="selectD()">
+                DC Comics
+            </div>
+            <div class="univers" id="styleE" onclick="selectE()">
+                James Bond
+            </div>
+            <div class="univers" id="styleF" onclick="selectF()">
+                Harry Potter
+            </div>
+            <div class="univers" id="styleG" onclick="selectG()">
+                Jurassic Park
+            </div>
+            <div class="univers" id="styleH" onclick="selectH()">
+                Pirates des Caraïbes
+            </div>
+            <div class="univers" id="styleI" onclick="selectI()">
+                Toy story
+            </div>
+        </div>
+        <ul>
+            <li>Conditions d'utilisation : <input type="radio" id="condition" name="utilisation"> J'accepte les conditions d'utilisation.</li>
+        </ul>
+    </div>
+    <p>
+        <button onclick="validerInsc()">Valider</button>
+    </p>
+    <footer class="footer_infos">
+        <h3>Antoine DAO & Yann GOETGHELUCK</h3>
+        <a href="Contact.html">Contact</a>
+        <a href="pages_info_legales.html">Page d'informations légales</a>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="Conditions_utilisation.html">Conditions d'utilisation</a>
+    </footer>
+</body>
+
+
+</html>
